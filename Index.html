@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Recetas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Generador de Recetas</h1>
-        <p>Puedes ingresar los ingredientes que desses o se encuentren disponibles.</p>
-        <ul id="lista-ingredientes"></ul>
-        <input type="text" name="Recetas" id="recetas-input" placeholder="Ingrese el ingrediente.">
-        <button type="button" class="boton-agregar">Agregar</button>
-    </div>
-     
-     <script src="script.js"></script>
+  <h1>Generador de Recetas</h1>
+  <div class="ingredientes">
+    <input type="text" id="ingredienteInput" placeholder="Ingresa un ingrediente">
+    <button onclick="agregarIngrediente()">Agregar Ingrediente</button>
+    <ul id="listaIngredientes"></ul>
+  </div>
+
+  <div class="recetas">
+    <input type="text" id="recetaInput" placeholder="Ingresa una receta">
+    <button onclick="agregarReceta()">Agregar Receta</button>
+    <ul id="listaRecetas"></ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
