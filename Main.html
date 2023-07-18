@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Mapa interactivo de One Piece</title>
   <style>
-    /* Estilos CSS */
+/* Estilos CSS */
 
     /* Fuente */
     body {
       font-family: Arial, sans-serif;
       background-color: rgb(24, 162, 212);
-      zoom: 86%;
+      zoom: 66%;
     }
 
     h1 {
@@ -46,18 +45,40 @@
     }
 
     .info {
+      border: 6px solid red;
+      animation: animated-border 5s linear infinite;
       display: none;
       position: absolute;
       top: 30px;
       left: 30px;
       padding: 10px;
-      border: 10px solid transparent;
-      border-image: linear-gradient(to right, #ff4d4d, #0040ff) 1;
       max-width: 300px;
       background-color: #ffffffc4;
       box-shadow: 16px 14px 20px black;
+      animation: animated-border 5s linear infinite;
     }
 
+    @keyframes animated-border {
+      0% {
+        border-color: red;
+      }
+
+      25% {
+        border-color: blue;
+      }
+
+      50% {
+        border-color: green;
+      }
+
+      75% {
+        border-color: yellow;
+      }
+
+      100% {
+        border-color: red;
+      }
+    }
 
     .info img {
       max-width: 300px;
@@ -102,7 +123,7 @@
           Gray Terminal,
           Flora y fauna.
         </p>
-          <img src="Imagenes/Goa.jpeg" alt="Dawn Island">
+        <img src="Imagenes/Goa.jpeg" alt="Dawn Island">
       </div>
     </div>
     <div class="punto-interes" style="top: 264px; left: 1637px;">
@@ -114,7 +135,7 @@
           Lugares destacados:
           Reino de Goa: Capital con niveles sociales y residencia de la realeza.
           Gray Terminal: Vertedero lleno de basura y tierra.
-          </p>
+        </p>
         <img src="Imagenes/Isla_Goat.png" alt="Goa Island">
       </div>
     </div>
